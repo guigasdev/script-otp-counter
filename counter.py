@@ -5,23 +5,51 @@ import time
 
 pyautogui.FAILSAFE = False
 
-print('Vai pra outra janela, cuida!')
-time.sleep(5)
+pokemon1=pokemon2=pokemon3=pokemon4=pokemon5=pokemon6=0
+
+primeiro_pokemon=str(input("posicione seu mouse e digite 1 para marcar posicao do primeiro pokémon: "))
+if primeiro_pokemon == "1":
+    pokemon1=pyautogui.position()
+
+segundo_pokemon=str(input("posicione seu mouse e digite 2 para marcar posicao do segundo pokémon: "))
+if segundo_pokemon == "2":
+    pokemon2  = pyautogui.position()  
+
+terceiro_pokemon=str(input("posicione seu mouse e digite 3 para marcar posicao do segundo pokémon: "))
+if terceiro_pokemon == "3":
+    pokemon3  = pyautogui.position() 
+
+quarto_pokemon=str(input("posicione seu mouse e digite 4 para marcar posicao do segundo pokémon: "))
+if quarto_pokemon == "4":
+    pokemon4  = pyautogui.position() 
+
+quinto_pokemon=str(input("posicione seu mouse e digite 5 para marcar posicao do segundo pokémon: "))
+if quinto_pokemon == "5":
+    pokemon5  = pyautogui.position() 
+
+sexto_pokemon=str(input("posicione seu mouse e digite 6 para marcar posicao do segundo pokémon: "))
+if sexto_pokemon == "6":
+    pokemon6  = pyautogui.position() 
+
 
 def acao_imagem1():
-    pyautogui.click(200, 200)  
+    pyautogui.moveTo(pokemon1)
+    pyautogui.doubleClick()  
     print("Ação para imagem 1")
 
 def acao_imagem2():
-    pyautogui.click(200, 200)  
+    pyautogui.moveTo(pokemon2)
+    pyautogui.doubleClick()  
     print("Ação para imagem 2")
 
 def acao_imagem3():
-    pyautogui.click(200, 200)  
+    pyautogui.moveTo(pokemon3)
+    pyautogui.doubleClick()  
     print("Ação para imagem 3")  
 
 def acao_imagem4():
-    pyautogui.click(200, 200)   
+    pyautogui.moveTo(pokemon4)
+    pyautogui.doubleClick()   
     print("Ação para imagem 4")
      
 imagens_acoes = {

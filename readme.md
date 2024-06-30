@@ -1,5 +1,57 @@
-## catch-position e click_em_qualquerlugar é basicamente para pegar a coordenada x, y do mouse, tem um delay de 5 segundos para posicionar, basta rodar com python (nome do arquivo).py
+# README
 
-## o counter.py é basicamente o "Principal", o que está completo, exceto pelo bug do pyautogui não clicar fora do vs code
+# Pokémon Counter Script
 
-## o teste.py era outra versao que criei para identificar o counter com match na imagem, tipo: apareceu o lapras e ele deu match, ele procura o counter (que no caso seria o arcanine) na tela e da click, mas está tambem com o problema de click
+Este repositório contém um script Python que identifica e executa ações específicas com base em Pokémon detectados na tela. Utilizando as bibliotecas `pyautogui`, `cv2` e `numpy`, o script detecta Pokémon pré-determinados e realiza ações associadas a eles.
+
+## Funcionalidades
+
+- Marca a posição dos Pokémon na tela.
+- Detecta Pokémon em tempo real usando captura de tela.
+- Executa ações específicas ao detectar Pokémon.
+
+## Requisitos
+
+- Python 3.x
+- Bibliotecas Python: `pyautogui`, `opencv-python`, `numpy`
+
+## Instalação
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/guigasdev/script-otp-counter.git
+cd script-otp-counter
+```
+
+2. Instale as dependências:
+
+```bash
+pip install pyautogui opencv-python numpy
+```
+
+## Uso
+
+1. Execute o script:
+
+```bash
+python counter.py
+```
+
+2. Marque as posições dos Pokémon na tela:
+
+    - Posicione o mouse sobre o Pokémon desejado e insira o número correspondente para marcar a posição.
+    
+    ```python
+    primeiro_pokemon=str(input("posicione seu mouse e digite 1 para marcar posicao do primeiro pokémon: "))
+    ```
+
+3. O script começará a capturar a tela e procurar pelos Pokémon especificados nas posições marcadas.
+
+4. Quando um Pokémon for detectado, a ação correspondente será executada.
+
+
+
+## Licença
+
+Este projeto está licenciado sob os termos da licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
