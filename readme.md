@@ -51,7 +51,3 @@ python counter.py
 4. Quando um Pokémon for detectado, a ação correspondente será executada.
 
 
-
-## Licença
-
-Este projeto está licenciado sob os termos da licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
